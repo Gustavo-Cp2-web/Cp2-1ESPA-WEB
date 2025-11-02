@@ -1,0 +1,514 @@
+/* Estilo geral de todas as paginas  */
+/* Reset e Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html { height: 100% 
+} 
+
+body {
+    background: linear-gradient(90deg, rgba(33, 0, 11, 1) 0%, rgba(72, 42, 117, 1) 50%, rgba(0, 38, 61, 1) 100%);
+    background-size: cover; 
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    color: #fff;
+}
+
+/* Header e Navegação */
+header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 20px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: #00d9ff;
+    margin-right: auto;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #e0e0e0;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+header nav ul li a::after {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 0px;
+    height: 2px;
+    background: linear-gradient(90deg, #ff006e, #00d9ff);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+header nav ul li a:hover {
+    color: #00d9ff;
+    transform: translateY(-2px);
+}
+
+header nav ul div {
+    display: flex;
+    gap: 10px;
+    margin-left: 16px;
+}
+
+/* Botões de Cor */
+.botao {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0);
+}
+
+.botao:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 32px;
+    max-width: 1400px;
+    margin: auto;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+    color: #e0e0e0;
+    padding: 48px 32px 16px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cont {
+    max-width: 1400px;
+    margin:  auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-bottom: 2px;
+}
+
+.footer-section{
+    flex: 1 1 250px; 
+}
+
+
+.footer-section h3 {
+    color: #00d9ff;
+    margin-bottom: 1px;
+    font-size: 25px;
+}
+
+.footer-section p {
+    line-height: 29px;
+    color: #b0b0b0;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    color: #00d9ff;
+    text-decoration: none;
+    padding: 3px 10px;
+    border: 2px solid #00d9ff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #00d9ff;
+    color: #1a1a2e;
+    box-shadow: 0 4px 8px rgba(0, 217, 255, 0.3);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 2px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #888;
+    font-size: 20px;
+}
+
+.slideshow {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 400px; 
+}
+
+#image {
+    width: 50%;
+    height: 400px;
+    object-fit: cover; 
+}
+.home-content {
+    padding: 48px 0;
+}
+
+/* Título principal da home */
+.home-content h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 16px;
+
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.3); 
+}
+
+/* Subtítulo */
+.subtitle {
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 48px;
+    opacity: 0.9;
+}
+
+/* Grid responsivo para os cards de features */
+.features {
+    display: flex; 
+    gap: 32px; 
+    margin: 48px 0;
+    flex-wrap: wrap;
+}
+
+/* Card individual de feature */
+.feature-card {
+    padding: 32px; 
+    border-radius: 15px; 
+    text-align: center; 
+    transition: all 0.5s ease; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    flex: 1 1 300px;
+}
+
+/* Efeito hover no card */
+.feature-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3); 
+}
+
+/* Ícone dentro do card */
+.icon {
+    font-size: 48px; 
+    margin-bottom: 16px;
+}
+
+/* Título do card */
+.feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.historia{
+    padding: 50px; 
+    border-radius: 15px; 
+    text-align: center; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.sobre{
+    font-size: 50px;
+}
+
+.sobre2{
+    font-size: 30px;
+}
+
+.texto{
+    font-size: 24px;
+}
+
+.portfolio-page {
+    padding: 2rem 0;
+}
+
+/* Título da página de portfólio */
+.portfolio-page h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 16px;
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+/* Grid de produtos */
+.products-grid {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 32px;
+    margin: 48px 0;
+}
+
+/* Card de produto */
+.product-card {
+    border-radius: 15px;
+    overflow: hidden; 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    flex: 1 1 350px
+}
+
+/* Efeito hover no card de produto */
+.product-card:hover {
+    transform: translateY(-10px); /* Levanta o card */
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+}
+
+/* Imagem do produto */
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Cobre toda área mantendo proporção */
+}
+
+/* Informações do produto */
+.product-info {
+    padding: 1.5rem;
+}
+
+/* Nome do produto */
+.product-info h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+/* Descrição do produto */
+.product-info p {
+    margin-bottom: 16px;
+}
+
+/* Detalhes (gênero e rating) */
+.product-details {
+    display: flex; 
+    justify-content: space-between; 
+    margin: 16px 0;
+    font-size: 15px;
+}
+
+/* Tags de gênero e rating */
+.genero,.rating {
+    padding: 5px 13px;
+    background: rgba(59, 130, 246, 0.2); /* Fundo semi-transparente */
+    border-radius: 5px;
+}
+
+/* Preço do produto */
+.preço {
+    font-size: 32px;
+    font-weight: bold;
+    color: #10b981; /* Verde para preço */
+    margin:16px 0;
+}
+
+.resultado {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    min-height: 700px;
+    padding: 32px;
+}
+
+#msg {
+    background: rgba(26, 26, 46, 0.8);
+    padding: 48px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid #00d9ff;
+    color: #fff;
+}
+
+.contato-page {
+    padding: 32px 0;
+    display: flex; 
+    flex-direction: column;     
+    justify-content: center;
+    margin: 0 auto; 
+}
+
+/* Título da página de contato */
+.contato-page h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 16px;
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.subtitulo{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 16px;
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+/* Wrapper principal (2 colunas: info + formulário) */
+.contato-grupo{
+    display: flex;
+    gap: 48px;
+    margin: 48px 0;
+    margin: 48px auto; 
+    max-width: 1200px; 
+    padding: 0 32px; 
+}
+
+/* ==============================================
+   INFORMAÇÕES DE CONTATO
+   ============================================== */
+
+.contact-info {
+    padding: 32px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+/* Item de informação */
+.info-item {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+/* Remove borda do último item */
+.info-item:last-child {
+    border-bottom: none;
+}
+
+/* Ícone do item */
+.info-item .icon {
+    font-size: 32px;
+}
+
+/* Título do item */
+.info-item h3 {
+    margin-bottom: 32px;
+}
+
+/* ==============================================
+   FORMULÁRIO DE CONTATO
+   ============================================== */
+
+.contact-form-grupo {
+    padding: 32px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form-grupo h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+/* Grupo de campo do formulário */
+.form-grupo {
+    margin-bottom: 24px;
+}
+
+/* Label do campo */
+.form-grupo label {
+    display: block; 
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Inputs, textareas e selects */
+.form-grupo input,.form-grupo textarea,.form-grupo select {
+    width: 100%; 
+    padding: 16px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1); 
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Estado focus (quando clicado/selecionado) */
+.form-grupo input:focus,.form-grupo textarea:focus,.form-grupo select:focus {
+    background: rgba(255, 255, 255, 0.15); /* Fundo mais claro */
+}
+
+/* Rodapé do formulário */
+.form-rodape {
+    display: flex;
+    justify-content: space-between; /* Espaça nas extremidades */
+    align-items: center; /* Alinha verticalmente */
+}
+
+/* Botão de submit */
+.enviar {
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito hover no submit */
+.enviar:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+}
+
+/* ==============================================
+   MENSAGEM DO FORMULÁRIO
+   ============================================== */
+
+#form-mensagem {
+    margin-top: 24px;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
